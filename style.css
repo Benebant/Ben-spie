@@ -1,0 +1,96 @@
+body {
+font-family: 'Courier New', monospace;
+margin: 0;
+padding: 2em;
+background: #fff5e6;
+transition: background 1s ease, filter 1s ease;
+color: #2b2b2b;
+}
+
+#game-container {
+max-width: 600px;
+margin: auto;
+padding: 2em;
+background: rgba(255, 255, 255, 0.95);
+border-radius: 10px;
+box-shadow: 0 0 20px rgba(90, 60, 40, 0.3);
+}
+
+#entry-number {
+font-size: 1.3em;
+margin-bottom: 0.4em;
+}
+
+#entry-text {
+margin-bottom: 1em;
+white-space: pre-wrap;
+}
+
+#character-panel {
+text-align: center;
+margin-bottom: 1em;
+}
+
+#ben-face {
+width: 220px;
+max-width: 90%;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(90, 60, 40, 0.3);
+transition: filter 0.5s ease, transform 0.3s ease;
+}
+
+/* Expression styles */
+.ben-glitch {
+filter: hue-rotate(30deg) contrast(1.4) brightness(1.1);
+transform: rotate(-1.5deg) scale(1.05);
+}
+
+.ben-smile {
+filter: brightness(1.2) saturate(1.4);
+transform: scale(1.02);
+}
+
+.ben-worried {
+filter: grayscale(0.2) brightness(0.85);
+transform: translateY(2px) scale(0.98);
+}
+
+.ben-angry {
+filter: sepia(30%) contrast(1.3);
+transform: rotate(0.5deg) scale(1.06);
+}
+
+.ben-neutral {
+filter: none;
+transform: none;
+}
+
+#choices button {
+display: block;
+margin: 0.4em 0;
+padding: 0.6em 1.2em;
+background: #f5ede0;
+border: 1px solid #c9ae97;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+transition: background 0.3s ease;
+}
+
+#choices button:hover {
+background: #ebd8b8;
+}
+
+/* Ambient background zones */
+.layer-crumb {
+background: linear-gradient(#fff5e6, #ffe7ba);
+}
+
+.layer-filling {
+background: linear-gradient(#f5e6ff, #d1b3ff);
+}
+
+.layer-crust {
+background: linear-gradient(#0e0e0e, #330000);
+filter: grayscale(20%) hue-rotate(-10deg);
+}
